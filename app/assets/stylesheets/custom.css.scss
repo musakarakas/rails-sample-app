@@ -53,15 +53,9 @@ p {
 /* header */
 
 #logo {
-  float: left;
-  margin-right: 10px;
   font-size: 1.7em;
-  color: white;
   text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
   font-weight: bold;
-  line-height: 1;
   &:hover {
     color: white;
     text-decoration: none;
@@ -91,14 +85,7 @@ footer {
 }
 
 /* miscellaneous */
-
-.debug_dump {
-  clear: both;
-  float: left;
-  width: 100%;
-  margin-top: 45px;
-  @include box_sizing;
-}
+.debug_dump { @extend .row; }
 
 /* sidebar */
 
@@ -142,3 +129,5 @@ input, textarea, select, .uneditable-input {
 input {
   height: auto !important;
 }
+
+.alert-error { @extend .alert-danger; }
